@@ -141,4 +141,46 @@
             }
         }
     }
+
+    .task-2 {
+
+        .timer-container {
+            display: grid;
+            row-gap: 3rem;
+
+            padding: 3rem;
+
+            > * {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .timer {
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 2rem;
+
+                .timer-item {
+                    width: min(10rem, 30%);
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    gap: 0.5rem;
+                }
+            }
+
+            .img-container {
+                height: 25rem;
+
+                > img {
+                    height: inherit;
+                    aspect-ratio: 1 / 1;
+                }
+            }
+        }
+    }
 }

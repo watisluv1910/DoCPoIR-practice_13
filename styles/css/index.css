@@ -120,3 +120,33 @@
 .main-content .task-1 .form-container form .captcha-input:focus::placeholder {
   opacity: 0;
 }
+.main-content .task-2 .timer-container {
+  display: grid;
+  row-gap: 3rem;
+  padding: 3rem;
+}
+.main-content .task-2 .timer-container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .task-2 .timer-container .timer {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.main-content .task-2 .timer-container .timer .timer-item {
+  width: min(10rem, 30%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main-content .task-2 .timer-container .img-container {
+  height: 25rem;
+}
+.main-content .task-2 .timer-container .img-container > img {
+  height: inherit;
+  aspect-ratio: 1/1;
+}
