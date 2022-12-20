@@ -138,6 +138,118 @@
                             </div>
                         </div>
                     </section>
+                    <section class="task-7">
+                        <div class="form-box grid-col-start-2">
+                            <div class="progress">
+                                <ul class="progress-steps ff-subtitle-1" role="list">
+                                    <li class="step active">
+                                        <span>1</span>
+                                        <div class="info">
+                                            <p>Personal</p>
+                                            <p class="ff-body-2">25 secs to complete</p>
+                                        </div>
+                                    </li>
+                                    <li class="step">
+                                        <span>2</span>
+                                        <div class="info">
+                                            <p>Contact</p>
+                                            <p class="ff-body-2">45 secs to complete</p>
+                                        </div>
+                                    </li>
+                                    <li class="step">
+                                        <span>3</span>
+                                        <div class="info">
+                                            <p>Security</p>
+                                            <p class="ff-body-2">30 secs to complete</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form action="">
+                                <div class="form-1 ff-body-2 form-step">
+                                    <p class="__title ff-headline-4">Personal Information</p>
+                                    <p class="__subtitle ff-subtitle-1">Enter your personal information correctly</p>
+                                    <div>
+                                        <label>First Name</label>
+                                        <input type="text" placeholder="e.g. John">
+                                    </div>
+                                    <div>
+                                        <label>Last Name</label>
+                                        <input type="text" placeholder="e.g. De Lorean">
+                                    </div>
+                                    <div class="birth">
+                                        <label>Date of Birth</label>
+                                        <div class="birth-date">
+                                            <input type="text" pattern="[0-9]" name="day" value="11" min="0" max="31" placeholder="DD">
+                                            <input type="text" pattern="[0-9]" name="month" value="09" min="0" max="12" placeholder="MM">
+                                            <input type="text" pattern="[0-9]" name="year" value="2001" min="0" max="2022" placeholder="YYYY">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-2 ff-body-2 form-step">
+                                    <p class="__title ff-headline-4">Contact</p>
+                                    <div>
+                                        <label>Country</label>
+                                        <select name="country" id="country">
+                                            <option value="">Please select</option>
+                                            <option value="Russia">Russia</option>
+                                            <option value="United States">United States</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>State</label>
+                                        <input type="text" placeholder="State/Province">
+                                    </div>
+                                    <div>
+                                        <label>City</label>
+                                        <input type="text" placeholder="City">
+                                    </div>
+                                    <div>
+                                        <label>Address</label>
+                                        <input type="text" placeholder="Street Address">
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="App, Suite, Building">
+                                    </div>
+                                    <div>
+                                        <label>Zip Code</label>
+                                        <input type="text" placeholder="Postal/Zip Code">
+                                    </div>                       
+                                    <div>
+                                        <label>Phone Number</label>
+                                        <input type="tel" placeholder="+7xxxxxx">
+                                    </div>
+                                </div>
+                                <div class="form-3 ff-body-2 form-step">
+                                    <p class="__title ff-headline-4">Security</p>
+                                    <div>
+                                        <label>Email</label>
+                                        <input type="email" name="email" placeholder="Your email address" required>
+                                    </div>
+                                    <div>
+                                        <label>Username</label>
+                                        <input type="text" placeholder="Username">
+                                    </div>
+                                    <div>
+                                        <label>Passsword</label>
+                                        <input type="password" placeholder="Passsword">
+                                    </div>
+                                    <div>
+                                        <input type="password" placeholder="Confirm password">
+                                    </div>
+                                    <div class="__checkbox">
+                                        <input type="checkbox">
+                                        <label>Receive our news letter and special offers</label>
+                                    </div>
+                                </div>
+                                <div class="btn-group ff-button">
+                                    <button class="btn btn-default btn-prev" type="button">Back</button>
+                                    <button class="btn btn-default btn-next" type="button">Next</button>
+                                    <button class="btn btn-default btn-submit clickable" data-href="https://online-edu.mirea.ru/">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
                 </div>
             </main>
         </div>
@@ -146,10 +258,15 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
         <script src="/src/js/captcha-manager.js"></script>
         <script src="/src/js/timer-manager.js"></script>
         <script src="/src/js/scientist-card.js"></script>
         <script src="/src/js/counter-manager.js"></script>
         <script src="/src/js/rating-manager.js"></script>
+        <script src="/src/js/registration-form.js"></script>
+        <script src="/src/js/clickable.js"></script>
     </body>
 </html>

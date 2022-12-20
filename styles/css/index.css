@@ -462,6 +462,262 @@
   background: #444;
   color: #fff;
 }
+.main-content .btn-default {
+  border: none;
+  background: var(--clr-mid-blue);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.main-content .btn-default:not(:disabled):hover {
+  background: var(--clr-red);
+  transform: scale(1.1);
+}
+.main-content .btn-default:active {
+  box-shadow: none;
+}
+.main-content .btn-default:disabled {
+  background: rgba(255, 255, 255, 0.6);
+  cursor: text;
+}
+.main-content .task-7 {
+  --gap-default: 1.6rem;
+  --col-num-default: 12;
+  display: grid;
+  grid-template-columns: repeat(var(--col-num-default), 1fr);
+  padding-inline: var(--gap-default);
+  --col-num-current: var(--col-num-default);
+}
+@media only screen and (min-width: 905px) {
+  .main-content .task-7 {
+    --col-num-current: calc(var(--col-num-default) - 2);
+  }
+}
+.main-content .task-7 .form-box {
+  grid-column-end: span var(--col-num-current);
+  margin-inline: var(--gap-default);
+  padding-top: var(--gap-default);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .task-7 .form-box .progress {
+  position: relative;
+  padding: var(--gap-default);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: calc(var(--gap-default) * 2);
+}
+.main-content .task-7 .form-box .progress .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content .task-7 .form-box .progress .logo > a {
+  font-size: 40px;
+}
+.main-content .task-7 .form-box .progress .progress-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-default);
+}
+.main-content .task-7 .form-box .progress .progress-steps .step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-default);
+}
+.main-content .task-7 .form-box .progress .progress-steps .step > span {
+  position: relative;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.main-content .task-7 .form-box .progress .progress-steps .step > span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: inherit;
+  aspect-ratio: 1/1;
+  z-index: -1;
+  border-radius: 50%;
+  background: var(--clr-mid-blue);
+}
+.main-content .task-7 .form-box .progress .progress-steps .step .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-content .task-7 .form-box .progress .progress-steps .step .info p:nth-child(2) {
+  color: rgba(255, 255, 255, 0.38);
+  display: none;
+}
+.main-content .task-7 .form-box .progress .progress-steps .step.active > span::after {
+  background: var(--clr-red);
+}
+.main-content .task-7 .form-box .progress .progress-steps .step.completed > span::after {
+  background: var(--clr-dark-red);
+}
+.main-content .task-7 .form-box form {
+  width: 100%;
+  padding: var(--gap-default);
+}
+.main-content .task-7 .form-box form > div {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 0;
+}
+.main-content .task-7 .form-box form > div .__title {
+  font-weight: 900;
+}
+.main-content .task-7 .form-box form > div .__subtitle {
+  color: rgba(255, 255, 255, 0.38);
+  margin-block: calc(var(--gap-default) / 3) calc(var(--gap-default) * 1.5);
+}
+.main-content .task-7 .form-box form > div:not(:first-child) .__title {
+  -webkit-margin-after: var(--gap-default);
+          margin-block-end: var(--gap-default);
+}
+.main-content .task-7 .form-box form > div > div:not(.__checkbox) {
+  display: flex;
+  flex-direction: column;
+  -webkit-margin-after: var(--gap-default);
+          margin-block-end: var(--gap-default);
+}
+.main-content .task-7 .form-box form > div > div:not(.__checkbox) label {
+  -webkit-margin-after: calc(var(--gap-default) / 6);
+          margin-block-end: calc(var(--gap-default) / 6);
+  font-size: 16px;
+  font-weight: 600;
+}
+.main-content .task-7 .form-box form :where(input, select) {
+  height: calc(var(--gap-default) * 1.5);
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid var(--clr-light-blue);
+  transition: all 0.3s ease-in-out;
+}
+.main-content .task-7 .form-box form :where(input, select):focus, .main-content .task-7 .form-box form :where(input, select):hover {
+  border-bottom: 1px solid var(--clr-dark-blue);
+}
+.main-content .task-7 .form-box form .birth-date {
+  display: flex;
+}
+.main-content .task-7 .form-box form .birth-date > input {
+  max-width: 70px;
+  text-align: center;
+  -webkit-margin-end: calc(var(--gap-default) / 2);
+          margin-inline-end: calc(var(--gap-default) / 2);
+}
+.main-content .task-7 .form-box form .__checkbox {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--gap-default) / 2);
+}
+.main-content .task-7 .form-box form .__checkbox > input[type=checkbox] {
+  height: auto;
+}
+.main-content .task-7 .form-box form .form-step {
+  display: none;
+  -webkit-animation: fadeIn 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: fadeIn 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.main-content .task-7 .form-box form .form-step.active {
+  display: block;
+}
+.main-content .task-7 .form-box form .btn-group {
+  display: flex;
+  justify-content: flex-start;
+  flex: row wrap;
+  gap: var(--gap-default);
+  -webkit-margin-before: var(--gap-default);
+          margin-block-start: var(--gap-default);
+}
+@media only screen and (max-width: 400px) {
+  .main-content .task-7 .form-box form .btn-group {
+    justify-content: space-between;
+  }
+}
+.main-content .task-7 .form-box form .btn-group .btn {
+  padding: 5px 20px;
+}
+.main-content .task-7 .form-box form .btn-group .btn-submit {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.main-content .task-7 .form-box form:has(.form-3.active) .btn-group .btn-submit {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+.main-content .task-7 .form-box ::-moz-placeholder {
+  color: var(--clr-white);
+}
+.main-content .task-7 .form-box :-ms-input-placeholder {
+  color: var(--clr-white);
+}
+.main-content .task-7 .form-box ::placeholder,
+.main-content .task-7 .form-box :where(input, select) {
+  color: var(--clr-white);
+}
+.main-content .task-7 .form-box .access-error {
+  -webkit-animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  border-bottom: 1px solid var(--clr-white);
+}
+.main-content .task-7 .form-box .access-error::-moz-placeholder {
+  color: #ff0000;
+}
+.main-content .task-7 .form-box .access-error:-ms-input-placeholder {
+  color: #ff0000;
+}
+.main-content .task-7 .form-box .access-error::placeholder {
+  color: #ff0000;
+}
+@media only screen and (min-width: 905px) {
+  .main-content .task-7 .main-wrapper .form-box {
+    flex-direction: row;
+  }
+  .main-content .task-7 .main-wrapper .form-box .progress {
+    min-width: 300px;
+    flex: 1 0 35%;
+    padding: calc(var(--gap-default) * 2);
+  }
+  .main-content .task-7 .main-wrapper .form-box .progress .progress-steps {
+    flex-direction: column;
+    gap: calc(var(--gap-default) * 2);
+  }
+  .main-content .task-7 .main-wrapper .form-box .progress .progress-steps .step {
+    flex-direction: row;
+  }
+  .main-content .task-7 .main-wrapper .form-box .progress .progress-steps .step .info p:nth-child(2) {
+    display: block;
+  }
+  .main-content .task-7 .main-wrapper .form-box .progress .progress-steps .step:not(:last-child) span::before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(100%);
+    content: "";
+    width: 4px;
+    height: 60px;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.38);
+  }
+}
 
 @-webkit-keyframes unhide {
   from {
@@ -482,5 +738,95 @@
   to {
     height: auto;
     opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes shake {
+  0% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  10% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40% {
+    transform: translate3d(4px, 0, 0);
+  }
+  50% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1px, 0, 0);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  10% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40% {
+    transform: translate3d(4px, 0, 0);
+  }
+  50% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1px, 0, 0);
   }
 }
