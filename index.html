@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/styles/ini/css/default.css">
         <link rel="stylesheet" href="/styles/css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <title>Practical work num. 13</title>
     </head>
     <body>
@@ -108,6 +109,35 @@
                             </div>
                         </div>
                     </section>
+                    <section class="task-6">
+                        <div class="container">
+                            <div class="post">
+                                <div class="text ff-headline-5">Thanks for rating us!</div>
+                                <div class="edit ff-body-1">EDIT</div>
+                            </div>
+                            <div class="star-widget">
+                                <input type="radio" name="rate" id="rate-5">
+                                <label for="rate-5" class="fas fa-star clickable"></label>
+                                <input type="radio" name="rate" id="rate-4">
+                                <label for="rate-4" class="fas fa-star clickable"></label>
+                                <input type="radio" name="rate" id="rate-3">
+                                <label for="rate-3" class="fas fa-star clickable"></label>
+                                <input type="radio" name="rate" id="rate-2">
+                                <label for="rate-2" class="fas fa-star clickable"></label>
+                                <input type="radio" name="rate" id="rate-1">
+                                <label for="rate-1" class="fas fa-star clickable"></label>
+                                <form action="#">
+                                    <header></header>
+                                    <div class="textarea ff-body-2">
+                                        <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                                    </div>
+                                    <div class="rate-btn">
+                                        <button type="submit" class="ff-button">Post</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </main>
         </div>
@@ -120,5 +150,6 @@
         <script src="/src/js/timer-manager.js"></script>
         <script src="/src/js/scientist-card.js"></script>
         <script src="/src/js/counter-manager.js"></script>
+        <script src="/src/js/rating-manager.js"></script>
     </body>
 </html>
