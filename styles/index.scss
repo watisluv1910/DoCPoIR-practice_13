@@ -413,6 +413,39 @@
             }
         }
     }
+
+    .task-5 {
+
+        .counter-container {
+            display: grid;
+            row-gap: 1rem;
+
+            padding: 1rem;
+
+            border-radius: 0.5rem;
+            background: var(--clr-dark-blue);
+
+            .img-container {
+                width: 10rem;
+                aspect-ratio: 1 / 1;
+
+                border-radius: inherit;
+
+                > img {
+                    border-radius: inherit;
+                }
+            }
+
+            .counter-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                gap: 0.25rem;
+            }
+        }
+    }
 }
 
 @keyframes unhide {

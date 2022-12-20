@@ -323,6 +323,28 @@
 .main-content .task-4 .scientist-card.active .icons {
   left: -100%;
 }
+.main-content .task-5 .counter-container {
+  display: grid;
+  row-gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--clr-dark-blue);
+}
+.main-content .task-5 .counter-container .img-container {
+  width: 10rem;
+  aspect-ratio: 1/1;
+  border-radius: inherit;
+}
+.main-content .task-5 .counter-container .img-container > img {
+  border-radius: inherit;
+}
+.main-content .task-5 .counter-container .counter-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
 
 @-webkit-keyframes unhide {
   from {
