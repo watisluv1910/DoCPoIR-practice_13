@@ -244,6 +244,85 @@
           animation: unhide var(--transition-time-icon) steps(1, end);
   display: block;
 }
+.main-content .task-4 .scientist-card {
+  position: relative;
+  height: min(25rem, 30%);
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  overflow: hidden;
+  border-radius: 50%;
+  background: linear-gradient(225deg, var(--clr-red) 0%, var(--clr-light-orange) 100%);
+  transition: all 0.2s ease-in-out;
+}
+.main-content .task-4 .scientist-card .img-container > img {
+  transition: all 0.3s ease-in-out;
+}
+.main-content .task-4 .scientist-card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+.main-content .task-4 .scientist-card .btn-group {
+  display: flex;
+  flex: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content .task-4 .scientist-card .btn-group > * {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  background: var(--clr-mid-blue);
+}
+.main-content .task-4 .scientist-card .icons {
+  position: absolute;
+  top: 2rem;
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.main-content .task-4 .scientist-card .icons > * {
+  height: 1.6rem;
+  aspect-ratio: 1/1;
+  font-size: 1.6rem;
+}
+.main-content .task-4 .scientist-card:hover {
+  height: 45rem;
+  aspect-ratio: 2/3;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.main-content .task-4 .scientist-card:hover .img-container > img {
+  position: relative;
+  height: 20rem;
+  aspect-ratio: 1/1;
+  margin: 0.5rem auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 0.5rem solid var(--clr-white);
+}
+.main-content .task-4 .scientist-card:hover .icons {
+  left: 2rem;
+}
+.main-content .task-4 .scientist-card.active {
+  padding: 0;
+}
+.main-content .task-4 .scientist-card.active .img-container img {
+  height: 45rem;
+  aspect-ratio: 2/3;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  border: none;
+}
+.main-content .task-4 .scientist-card.active .icons {
+  left: -100%;
+}
 
 @-webkit-keyframes unhide {
   from {
