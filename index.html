@@ -9,6 +9,36 @@
         <title>Practical work num. 13</title>
     </head>
     <body>
-        
+        <div class="body-content">
+            <main>
+                <div class="main-content">
+                    <section class="task-1">
+                        <div class="form-container">
+                            <div class="ff-headline-5">JS captcha</div>
+                            <div class="captcha-container">
+                                <div class="captcha">
+                                    <p class="ff-captcha" id="captcha" aria-disabled="true">dUjIIe</p>
+                                </div>
+                                <div class="btn captcha-reset-btn ff-button clickable">
+                                    <ion-icon name="refresh-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <form action="" method="get">
+                                <input type="text" class="captcha-input ff-body-1" name="captcha" id="captcha-input">
+                                <button type="button" class="btn captcha-submit-btn ff-button clickable">
+                                    <ion-icon name="enter-outline"></ion-icon>
+                                </button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <!-- Scripts -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script src="/src/js/captcha-manager.js"></script>
     </body>
 </html>
