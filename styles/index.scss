@@ -109,6 +109,7 @@
                     > p {
                         padding-inline-start: 2rem;
                         user-select: none;
+                        -webkit-user-select: none;
                         color: rgba($color: #000000, $alpha: 0.5);
                     }
                 }
